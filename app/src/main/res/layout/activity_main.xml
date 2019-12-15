@@ -10,12 +10,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="vertical"
         android:layout_weight="1">
-        <fragment
-            android:id="@+id/firstFrag"
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            class="com.tjeit.a20191215_03_fragment.fragments.FirstFragment" />
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/firstFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.tjeit.a20191215_03_fragment.fragments.FirstFragment" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/secondFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.tjeit.a20191215_03_fragment.fragments.SecondFragment" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
