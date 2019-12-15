@@ -7,5 +7,38 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <fragment
+            android:id="@+id/firstFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.tjeit.a20191215_03_fragment.fragments.FirstFragment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/firstFragBtn"
+            android:text="1번 프래그먼트"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/secondFragBtn"
+            android:text="2번 프래그먼트"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
