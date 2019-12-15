@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.tjeit.a20191215_03_fragment.R
 import kotlinx.android.synthetic.main.fragment_first.*
 
-class FirstFragment : Fragment() {
+class FirstFragment : BaseFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,11 +21,24 @@ class FirstFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        setupEvents()
+        setValues()
 
-        okBtn.setOnClickListener {
-            Toast.makeText(activity, "${nameEdt.text.toString()} / ${nickNameEdt.text.toString()}", Toast.LENGTH_SHORT).show()
-        }
     }
+
+
+    override fun setupEvents() {
+        okBtn.setOnClickListener {
+            Toast.makeText(mContext, "${nameEdt.text.toString()} / ${nickNameEdt.text.toString()}", Toast.LENGTH_SHORT).show()
+        }
+
+    }
+
+    override fun setValues() {
+
+    }
+
+
 
 }
 
