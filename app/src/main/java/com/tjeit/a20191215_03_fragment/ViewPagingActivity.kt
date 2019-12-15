@@ -21,5 +21,8 @@ class ViewPagingActivity : BaseActivity() {
 
     override fun setValues() {
         mainViewPager.adapter = MainViewPagerAdapater(supportFragmentManager)
+
+        mainTabLayout.setupWithViewPager(mainViewPager)
+
     }
 }
